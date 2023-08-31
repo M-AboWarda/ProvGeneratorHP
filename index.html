@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prov Generatorn | HPGymmet</title>
+        <meta name="author" content="Mohammad Abo Warda">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+    <body>
+        <!--<div id="nav-container"><div id="nav">HPGymmet Provet</div></div>-->
+        
+        <div id="exam-container">
+            <div id="info-container">
+                
+                <div id="info-head">Vällkommen till HpGymmets Prov Generator</div>
+                    
+                <div class="info-content"><h2 style="padding-bottom: 7px; text-align: left">Informationer om Provet</h2>
+                    <hr><hr>
+                    <br>
+                    <div class="info-content-section">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </div>
+                </div>
+                <div class="info-content">
+                    <div id="settings-container">
+                        
+                        <h2 style="padding-bottom:7px">Inställningar</h2>
+                        <hr><hr>
+                        <div class="settings">
+                            <label>
+                                <input id="shuffle" name="shuffle" type="checkbox"><span class="settings-string"> Blanda frågorna</span>
+                            </label>
+                        </div>
+                        <div class="settings">
+                            <span class="settings-string">antal frågor i provet</span><br>
+                            <label>
+                                <input id="questions-limit" name="questions-limit" type="text" placeholder="Skriv en siffra!..."><br>
+                                <span class="settings-notes">Exempel: 6<br>OBS! du kan välja mellan 5-20 frågor. Tio frågor väljs automatisk om du lämnar fälltet tomt</span>
+                            </label>
+                        </div>
+                        <div class="settings"><!--pro version ONLY-->
+                            <span class="settings-string">vilka delar ska vara med</span><br>
+                            <label>
+                                <input id="checkbox-LÄS" name="checkbox-LÄS" type="checkbox"><span class="settings-notes"> LÄS</span>
+                            </label>
+                            <label>
+                                <input id="checkbox-ORD" name="checkbox-ORD" type="checkbox"><span class="settings-notes"> ORD</span>
+                            </label>
+                            <label>
+                                <input id="checkbox-MEK" name="checkbox-MEK" type="checkbox"><span class="settings-notes"> MEK</span>
+                            </label>
+                            <label>
+                                <input id="checkbox-ELF" name="checkbox-ELF" type="checkbox"><span class="settings-notes"> ELF</span>
+                            </label>
+                            <br>
+                            <label>
+                                <input id="checkbox-NOG" name="checkbox-NOG" type="checkbox"><span class="settings-notes"> NOG</span>
+                            </label>
+                            <label>
+                                <input id="checkbox-DTK" name="checkbox-DTK" type="checkbox"><span class="settings-notes"> DTK</span>
+                            </label>
+                            <label>
+                                <input id="checkbox-XYZ" name="checkbox-XYZ" type="checkbox"><span class="settings-notes"> XYZ</span>
+                            </label>
+                            <label>
+                                <input id="checkbox-KVA" name="checkbox-KVA" type="checkbox"><span class="settings-notes"> KVA</span>
+                            </label>
+
+                        </div>
+                        <div class="settings"><!--pro version ONLY-->
+                            <span class="settings-string">tiden</span><br>
+                            <label>
+                                <input id="timeput" name="timeput" type="text" placeholder="Minuter...">
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <br>    
+                <button id="startbtn" onclick="startExamBtn()" class="buttons">Generera Mitt Unik Prov
+                </button>
+            </div>
+            
+            
+            <div id="quiz"></div>
+            <button id="submit" onclick="finishExamBtn()" class="buttons">Avsluta Provet</button>
+            <div id="results"></div>
+            
+            <!--<hr>-->
+            
+            <button id="done" onclick="doneExamBtn()" class="buttons">Klart</button>
+        </div>
+        <div id="countdown-container">
+            <div id="countdown">
+                <div id="hrs"></div>
+                <div id="mins"></div>
+                <div id="secs"></div>
+            </div>
+            
+        </div>
+        
+        
+        
+        <!-- test section-->
+        <div id="test">
+            
+            
+            
+        </div>        
+
+        
+        <!-- test section end-->
+        
+                
+        <script type="text/javascript" src="js/questions.js"></script>
+        <script type="text/javascript" src="js/builder-and-correcter.js"></script>
+        <script type="text/javascript" src="js/countdown.js"></script>
+        <script type="text/javascript" src="js/extensions.js"></script>
+        <script type="text/javascript" src="js/buttons-manager.js"></script>
+    
+    </body>
+</html>
